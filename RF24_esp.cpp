@@ -437,6 +437,7 @@ RF24_esp::RF24_esp(uint16_t _cepin, uint16_t _cspin,SPIClass *port):
   payload_size(32), dynamic_payloads_enabled(false), addr_width(5),csDelay(5)//,pipe0_reading_address(0)
 {
   pipe0_reading_address[0]=0;
+  mSPI = port;
 }
 
 /****************************************************************************/
